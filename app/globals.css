@@ -2,32 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /*  LAYOUT */
+    /* 100% of root, 5rem to 1rem, screen 1440 - 320 */
+    --section-block-padding: clamp(2rem, 4.286vw + 1.143rem, 5rem);
+
+    /* 100% of root, 4rem to 1rem, screen 1440 - 320 */
+    --section-inline-padding: clamp(1rem, 4.286vw + 0.143rem, 4rem);
+
+    /* TYPOGRAPHY */
+    /* 100% of root, desktop 4rem, mobile 2.5rem, screen 1440 - 320  */
+    --h1: clamp(2.5rem, 2.143vw + 2.071rem, 4rem);
+
+    /* 100% of root, 3rem to 2.25rem */
+    --h2: clamp(2.25rem, 1.071vw + 2.036rem, 3rem);
+
+    /* 100% of root, 2.5rem to 2rem */
+    --h3: clamp(2rem, 0.714vw + 1.857rem, 2.5rem);
+
+    /* 100% of root, 2rem to 1.5rem */
+    --h4: clamp(1.5rem, 0.714vw + 1.357rem, 2rem);
+
+    /* 100% of root, 1.5rem to 1.25rem */
+    --h5: clamp(1.25rem, 0.357vw + 1.179rem, 1.5rem);
+
+    /* 100% of root, 1.25rem to 1.125rem */
+    --h6: clamp(1.125rem, 0.179vw + 1.089rem, 1.25rem);
+
+    --p: 1rem;
+
+    --card-offset: 7rem;
+
+    --container-gap: clamp(2rem, 5.714vw + 0.857rem, 6rem);
+    --grid-gap: clamp(0.5rem, 2.143vw + 0.071rem, 2rem);
+    --content-gap: clamp(0.5rem, 0.714vw + 0.357rem, 1rem);
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  /*  LAYOUT */
+  section {
+    @apply px-section_x py-section_y;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .section_container {
+    @apply mx-auto max-w-[1312px];
   }
 }
