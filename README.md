@@ -65,13 +65,13 @@ To get started with this Next.js project starter, follow these steps:
    - Alternatively:
 
    ```bash
-   npx degit emmanuelubachi/nextjs-starter nextjs-project-starter
+   npx degit emmanuelubachi/nextjs-simple-starter <project name>
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd nextjs-project-starter
+   cd <project name>
    ```
 
 3. Install the project dependencies:
