@@ -60,48 +60,65 @@ marketplace.
 To get started with this Next.js project starter, follow these steps:
 
 1. Clone this repository to your local machine:
+
    - Click the green `Use this template` button above.
    - Alternatively:
 
-```bash
-   npx degit the-pudding/svelte-starter my-project
-```
+   ```bash
+   npx degit emmanuelubachi/nextjs-starter nextjs-project-starter
+   ```
 
-2. Navigate to the project folder: `cd nextjs-project-starter`
+2. Navigate to the project folder:
+
+   ```bash
+   cd nextjs-project-starter
+   ```
 
 3. Install the project dependencies:
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpn install
-# or
-bun install
-```
+   ```bash
+   npm install
+   ```
+
+   ```bash
+   yarn install
+   ```
+
+   ```bash
+   pnpn install
+   ```
+
+   ```bash
+   bun install
+   ```
 
 4. Run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   npm run dev
+   ```
+
+   ```bash
+   yarn dev
+   ```
+
+   ```bash
+   pnpm dev
+   ```
+
+   ```bash
+   bun dev
+   ```
 
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to see
    the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page
-auto-updates as you edit the file.
+   You can start editing the page by modifying `app/page.tsx`. The page
+   auto-updates as you edit the file.
 
-This project uses
-[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
-automatically optimize and load Inter, a custom Google Font.
+   This project uses
+   [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
+   automatically optimize and load Inter, a custom Google Font.
 
 ## Deploy on Vercel
 
