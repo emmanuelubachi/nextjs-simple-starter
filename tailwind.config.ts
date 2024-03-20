@@ -29,10 +29,9 @@ const config: Config = {
 
     extend: {
       padding: {
-        section_x: 'var(--section-inline-padding)',
-        section_y: 'var(--section-block-padding)',
-        section_card_offset:
-          'calc(var(--section-block-padding) + var(--card-offset))'
+        'clamp_5-2': 'var(--clamp_5-2)',
+        'clamp_4-1': 'var(--clamp_4-1)',
+        section_card_offset: 'calc(var(--clamp_5-2) + var(--card-offset))'
       },
       margin: {
         card_offset: 'var(--card-offset)'
