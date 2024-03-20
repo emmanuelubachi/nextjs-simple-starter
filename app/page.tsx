@@ -4,7 +4,7 @@ export default function page() {
   return (
     <main>
       <section className='bg-gray-300 pb-section_card_offset'>
-        <div className='section_container gap-content grid'>
+        <div className='section_container grid gap-content'>
           <h1 className='text-h1'>Heading 1</h1>
           <h2 className='text-h2'>Heading 2</h2>
           <h3 className='text-h3'>Heading 3</h3>
@@ -18,13 +18,13 @@ export default function page() {
       <section className='pt-0'>
         <div
           className='section_container 
-          gap-content md:grid md:grid-cols-1 
-          -mt-card_offset
-          grid grid-cols-2
-          rounded-2xl 
-          bg-slate-600 
-          p-section_x
-          text-white'
+          p-clamp_4-1 -mt-card_offset grid 
+          grid-cols-2
+          gap-content rounded-2xl
+          bg-slate-600
+          text-white 
+          md:grid
+          md:grid-cols-1'
         >
           <div className='max-w-[1000px]'>
             <h4 className='text-h4 font-semibold'>Title</h4>
@@ -38,11 +38,11 @@ export default function page() {
 
           <div className='m-auto'>
             <button
-              className='items-center 
-              rounded-2xl border 
+              className='px-clamp_5-2 
+              items-center rounded-2xl 
+              border
               border-white/30
               bg-orange-400
-              px-section_y 
               text-[calc(var(--h2)*1.1)]'
               type='button'
             >
@@ -54,12 +54,12 @@ export default function page() {
 
       <section className='pt-0'>
         <div
-          className='section_container gap-content
-          md:grid md:grid-cols-1 grid 
-          grid-cols-2 rounded-2xl
-          bg-slate-600 
-          p-section_x 
-          text-white'
+          className='section_container p-clamp_4-1
+          grid grid-cols-2 gap-content 
+          rounded-2xl bg-slate-600
+          text-white 
+          md:grid 
+          md:grid-cols-1'
         >
           <div className='max-w-[1000px]'>
             <h4 className='text-h4 font-semibold'>Title</h4>
@@ -73,11 +73,11 @@ export default function page() {
 
           <div className='m-auto'>
             <button
-              className='items-center 
-              rounded-2xl border 
+              className='px-clamp_5-2 
+              items-center rounded-2xl 
+              border
               border-white/30
               bg-orange-400
-              px-section_y 
               text-[calc(var(--h2)*1.1)]'
               type='button'
             >
